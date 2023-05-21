@@ -63,13 +63,13 @@ public class StatsServiceTest {
 
     @Test
 
-    public void LowerAvgMonth() {
+    public void lowerAvgMonth() {
         StatsService service = new StatsService();
 
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int expectedMaxNumber = 7;
-        int actualMaxNumber = service.LowerAvgMonth(sales);
+        int actualMaxNumber = service.lowerAvgMonth(sales);
 
         Assertions.assertEquals(expectedMaxNumber, actualMaxNumber);
 
@@ -78,13 +78,13 @@ public class StatsServiceTest {
 
     @Test
 
-    public void UpperAvgMonth() {
+    public void upperAvgMonth() {
         StatsService service = new StatsService();
 
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
         int expectedMaxNumber = 7;
-        int actualMaxNumber = service.UpperAvgMonth(sales);
+        int actualMaxNumber = service.upperAvgMonth(sales);
 
         Assertions.assertEquals(expectedMaxNumber, actualMaxNumber);
 
